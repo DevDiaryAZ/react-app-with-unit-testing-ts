@@ -1,3 +1,5 @@
+import {CityType} from "./02_objects";
+
 let city: CityType
 
 beforeEach(() => {

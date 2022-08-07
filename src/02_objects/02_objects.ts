@@ -6,20 +6,20 @@ type HouseAddressType = {
     number?: number
     street: StreetType
 }
-type HousesType = {
+export type HousesType = {
     id: number
     buildedAt: number
     repaired: boolean
     address: HouseAddressType
 }
-type GovernmentBuildingsType = {
+export type GovernmentBuildingsType = {
     id: number
     type: string
     budget: number
     staffCount: number
     address: HouseAddressType
 }
-type CityType = {
+export type CityType = {
     title: string
     houses: HousesType[]
     governmentBuildings: GovernmentBuildingsType[]
@@ -40,7 +40,7 @@ type TechnologiesType = {
     title: string
 
 }
-type  StudentType = {
+export type  StudentType = {
     id: number
     name: string
     age: number
@@ -49,7 +49,7 @@ type  StudentType = {
     technologies: TechnologiesType[]
 }
 
-const student: StudentType = {
+export const student: StudentType = {
     id: 1,
     "name": "Helen",
     age: 29,
